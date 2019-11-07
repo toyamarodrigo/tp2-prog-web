@@ -9,8 +9,8 @@
     /*
     TODO: 
     [] cortar las imagenes de las secciones
-    [] arreglar/agregar todas las imagenes de las secciones que antes eran parallax.
-    [] arreglar el tamaño de las imagenes de las redes sociales
+    [x] arreglar/agregar todas las imagenes de las secciones que antes eran parallax.
+    [x] arreglar el tamaño de las imagenes de las redes sociales
     [] reducir tamaño a las imagenes
     */
   </style>
@@ -28,7 +28,7 @@
   <div class="deco-line"></div>
 
   <!----- Navivation ----->
-  <nav class="my-navbar navbar navbar-expand-md navbar-dark fixed-top bg-dark py-2">
+  <nav class="my-navbar navbar navbar-expand-md navbar-dark sticky-top bg-dark py-2">
     <div class="container-fluid">
       <a href="index.html" class="navbar-brand">
         <img src="images/logo.png" alt="Logo RT" class="img-fluid rounded-circle w-25">
@@ -70,30 +70,30 @@
   <!----- Header ----->
   <!-- FIXME: img parallax -->
   <header>
-    <div class="container-fluid">
+    <div class="col-12">
       <div class="row justify-content-center align-items-center">
-        <div class="position-absolute col-lg-12">
-          <h1 class="jumbotron w-50 justify-content-center mx-auto bg-dark text-white display-4 text-center p-4">
-            Rodrigo
-            Toyama.</h1>
+        <div class="position-absolute col-xl-12 col-lg-12">
+          <h1
+            class="col-xl-6 col-lg-7 col-md-9 col-sm-12 col-10 jumbotron justify-content-center mx-auto bg-dark text-white display-4 text-center p-4">
+            RODRIGO TOYAMA.</h1>
         </div>
-          <img src="images/barrio7-unsam.jpg" alt="" class="img-fluid">
+        <img src="images/barrio7-unsam.jpg" alt="" class="img-fluid w-100 vh-100">
       </div>
     </div>
   </header>
 
 
   <!----- Main ----->
-  <main id="AboutMe" class="row">
+  <main id="AboutMe">
 
     <section class="container-fluid padding">
       <div class="row text-center padding">
-        <div class="col-lg-4 col-md-3 col-sm-2 col-xs-1 mx-auto p-0 pt-5">
-          <img src="images/avatar.svg" class="img-fluid pb-4 w-75" alt="img-avatar">
+        <div class="col-xl-6 col-lg-6 col-md-5 col-sm-5 col-7 mx-auto p-0 pt-5">
+          <img src="images/avatar.svg" class="col-lg-6 pb-4 w-75" alt="img-avatar">
           <h1>Who am I?</h1>
         </div>
         <div class="row text-center mx-auto">
-          <div class="col-lg-9 col-md-10 col-sm-12 col-sm-12 mx-auto">
+          <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-10 mx-auto">
             <p class="lead pb-4">Welcome to my Bootstrap 4 website. Bootstrap is a free and open-source front-end
               library
               with
@@ -103,7 +103,7 @@
       </div>
       <div class="container-fluid padding">
         <div class="row text-center padding">
-          <div class="card col-xs-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 mx-auto mb-5 bg-dark text-white p-4">
+          <div class="card col-10 col-sm-5 col-md-4 col-lg-4 col-xl-3 mx-auto mb-5 bg-dark text-white p-4">
             <h3 class="my-auto">Skills</h3>
             <hr>
             <p class="lead">HTML5</p>
@@ -114,7 +114,7 @@
             <p class="lead">Hibernate</p>
             <p class="lead">Spring 5</p>
           </div>
-          <div class="card col-xs-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 mx-auto mb-5 bg-dark text-white p-4">
+          <div class="card col-10 col-sm-5 col-md-4 col-lg-4 col-xl-3 mx-auto mb-5 bg-dark text-white p-4">
             <h3>Others</h3>
             <hr>
             <p class="lead">MySQL</p>
@@ -130,28 +130,29 @@
 
     <!-- FIXME: img parallax -->
     <section id="WhereDoILive">
-      <div class="container-fluid">
-        <div class="row justify-content-center align-items-center h-100">
-          <div class="position-absolute col-lg-12">
-            <h1 class="jumbotron w-50 justify-content-center mx-auto bg-dark text-white display-4 text-center p-4">
-              Where Do I Live?</h1>
+      <div class="col-12">
+        <div class="row justify-content-center align-items-center">
+          <div class="position-absolute col-xl-12 col-lg-12">
+            <h1
+              class="col-xl-6 col-lg-8 col-md-8 col-sm-10 col-12 jumbotron justify-content-center mx-auto bg-dark text-white display-4 text-center p-4">
+              WHERE DO I LIVE?</h1>
           </div>
-          <img src="images/barrio7-unsam.jpg" alt="" class="img-fluid w-100 vh-100">
+          <img src="images/barrio3-sanmartin.jpg" alt="" class="img-fluid w-100 vh-100">
         </div>
       </div>
 
-      <div class="container-fluid padding">
-        <div class="card col-lg-9 mx-auto p-0 m-5">
-          <div class="row padding mx-auto">
+      <div class="container-fluid">
+        <div class="card col-xl-8 col-lg-10 col-md-11 col-sm-11 col-12 mx-auto p-0 m-5">
+          <div class="row mx-auto">
             <div class="col-lg-7 p-0">
-              <img src="images/barrio3-sanmartin.jpg" alt="barrio" class="img-fluid">
+              <img src="images/barrio3-sanmartin.jpg" alt="barrio" class="img-fluid ">
             </div>
             <div class="col-lg-5 p-0 pl-3 pr-3">
               <h2 class="card-title text-center pt-3">Villa Ballester</h2>
               <hr>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aliquid vitae, corporis
-                quisquam obcaecati quod illum fugit enim ea dolore beatae consequuntur repellendus in cum. Quidem quam
-                earum voluptatum porro?</p>
+              <p class="card-text lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius qui cupiditate
+                praesentium vero non dicta dignissimos assumenda, debitis facere nisi libero vel id doloribus molestias
+                voluptatibus autem quis error enim sequi!.</p>
             </div>
           </div>
 
@@ -159,32 +160,81 @@
 
         <div class="row">
 
-          <div class="card col-lg-3 p-0 m-2 mb-5 mx-auto">
+          <div class="card col-lg-3 col-md-10 col-sm-10 col-10 p-0 m-2 mb-5 mx-auto">
             <img src="images/barrio1-bk.jpg" alt="" class="card-img-top">
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti et vero nisi minus
-                odio beatae ullam impedit, adipisci modi recusandae aut officiis, esse delectus amet aliquam officia
-                assumenda laudantium. Obcaecati.</p>
+              <p class="card-text lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti et vero nisi
+                minus
+                odio beatae ullam impedit, adipisci.</p>
             </div>
           </div>
-          <div class="card col-lg-3 p-0 m-2 mb-5 mx-auto">
+          <div class="card col-lg-3 col-md-10 col-sm-10 col-10 p-0 m-2 mb-5 mx-auto">
             <img src="images/barrio4-sanmartin.jpg" alt="" class="card-img-top">
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti et vero nisi minus
-                odio beatae ullam impedit, adipisci modi recusandae aut officiis, esse delectus amet aliquam officia
-                assumenda laudantium. Obcaecati.</p>
+              <p class="card-text lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti et vero nisi
+                minus
+                odio beatae ullam impedit, adipisci .</p>
             </div>
           </div>
-          <div class="card col-lg-3 p-0 m-2 mb-5 mx-auto">
+          <div class="card col-lg-3 col-md-10 col-sm-10 col-10 p-0 m-2 mb-5 mx-auto">
             <img src="images/barrio6-unsam.jpg" alt="" class="card-img-top">
             <div class="card-body">
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti et vero nisi minus
-                odio beatae ullam impedit, adipisci modi recusandae aut officiis, esse delectus amet aliquam officia
-                assumenda laudantium. Obcaecati.</p>
+              <p class="card-text lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti et vero nisi
+                minus
+                odio beatae ullam impedit, adipisci modi.</p>
             </div>
           </div>
 
         </div>
+
+
+        <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <!-- <img src="http://placehold.it/250x250" class="d-block w-100" alt="..."> -->
+                <div class="row">
+                  <div class="col-4"><img src="images/animal2-chico.jpg" alt="First slide" class="w-100 img-thumbnail"></div>
+                  <div class="col-4"><img src="images/animal3-chico.jpg" alt="First slide" class="w-100 img-thumbnail"></div>
+                  <div class="col-4"><img src="images/animal4-chico.jpg" alt="First slide" class="w-100 img-thumbnail"></div>
+                </div>
+                <!--.row-->
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-4"><img src="images/animal2-chico.jpg" alt="Second slide" class="w-100 img-thumbnail"></div>
+                  <div class="col-4"><img src="images/animal3-chico.jpg" alt="Second slide" class="w-100 img-thumbnail"></div>
+                  <div class="col-4"><img src="images/animal4-chico.jpg" alt="Second slide" class="w-100 img-thumbnail"></div>
+                </div>
+                <!--.row-->
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-4"><img src="images/animal2-chico.jpg" alt="Third slide" class="w-100 img-thumbnail"></div>
+                  <div class="col-4"><img src="images/animal3-chico.jpg" alt="Third slide" class="w-100 img-thumbnail"></div>
+                  <div class="col-4"><img src="images/animal4-chico.jpg" alt="Third slide" class="w-100 img-thumbnail"></div>
+                </div>
+                <!--.row-->
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+
+
     </section>
 
 
@@ -195,17 +245,18 @@
       <div class="container-fluid">
         <div class="row justify-content-center align-items-center">
           <div class="position-absolute col-lg-12">
-            <h1 class="jumbotron w-50 justify-content-center mx-auto bg-dark text-white display-4 text-center p-4">
-              My Favorite Pet</h1>
+            <h1
+              class="col-xl-6 col-lg-8 col-md-9 col-sm-11 jumbotron justify-content-center mx-auto bg-dark text-white display-4 text-center p-4">
+              MY FAVOURITE PET</h1>
           </div>
-          <img src="images/animal1-grande.jpg" alt="" class="img-fluid">
+          <img src="images/animal1-grande.jpg" alt="" class="img-fluid w-100 vh-100">
         </div>
       </div>
 
       <div class="container-fluid">
 
         <div class="row mt-5 mb-3">
-          <div class="col-lg-10 col-md-8 text-center mx-auto m-3">
+          <div class="col-lg-10 col-md-8 col-sm-11 text-center mx-auto m-3">
             <h1 class="">Why labradors are the best dogs in the World?</h1>
             <p class="lead mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ut consectetur
               unde doloremque fugiat accusantium saepe, quia cum temporibus ipsa totam quos. Impedit saepe soluta
@@ -213,24 +264,24 @@
           </div>
         </div>
         <div class="row mx-auto mb-5">
-          <div class="col-lg-3 col-md-9 p-0 m-3 mx-auto">
+          <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
             <img src="images/animal1-chico.jpg" alt="" class="img-fluid">
           </div>
-          <div class="col-lg-3 col-md-9 p-0 m-3 mx-auto">
+          <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
             <img src="images/animal4-chico.jpg" alt="" class="img-fluid">
           </div>
-          <div class="col-lg-3 col-md-9 p-0 m-3 mx-auto">
+          <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
             <img src="images/animal2-chico.jpg" alt="" class="img-fluid">
           </div>
         </div>
         <div class="row mx-auto mb-5 pb-5">
-          <div class="col-lg-3 col-md-9 p-0 m-3 mx-auto">
+          <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
             <img src="images/animal3-chico.jpg" alt="" class="img-fluid">
           </div>
-          <div class="col-lg-3 col-md-9 p-0 m-3 mx-auto">
+          <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
             <img src="images/animal5-chico.jpg" alt="" class="img-fluid">
           </div>
-          <div class="col-lg-3 col-md-9 p-0 m-3 mx-auto">
+          <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
             <img src="images/animal6-chico.jpg" alt="" class="img-fluid">
           </div>
         </div>
@@ -243,35 +294,36 @@
 
       <!-- FIXME: img parallax -->
 
-      <div class="container-fluid p-0 m-0">
-        <div class="row justify-content-center align-items-center pb-5">
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center">
           <div class="position-absolute col-lg-12">
-            <h1 class="jumbotron w-50 justify-content-center mx-auto bg-dark text-white display-4 text-center p-4">
-              Studies</h1>
+            <h1
+              class="col-xl-6 col-lg-8 col-md-6 col-sm-6 col-7 jumbotron justify-content-center mx-auto bg-dark text-white display-4 text-center p-4">
+              STUDIES</h1>
           </div>
-          <img src="images/barrio5-unsam.jpg" alt="" class="img-fluid">
+          <img src="images/barrio5-unsam.jpg" alt="" class="img-fluid w-100 vh-100">
         </div>
       </div>
 
       <div class="row">
-        <div class="col-lg-5 col-md-8 mx-auto m-3">
-          <img src="images/estudio1.png" alt="estudio1" class="img-fluid">
+        <div class="col-lg-5 col-md-10 col-sm-10 col-10 mx-auto m-3">
+          <img src="images/estudio1.png" alt="estudio1" class="img-fluid shadow p-3 mb-5 bg-white rounded">
         </div>
-        <div class="col-lg-5 col-md-8 mx-auto m-3">
-          <img src="images/estudio2.png" alt="estudio2" class="img-fluid">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-5 col-md-8 mx-auto m-3">
-          <img src="images/estudio3.png" alt="estudio3" class="img-fluid">
-        </div>
-        <div class="col-lg-5 col-md-8 mx-auto m-3">
-          <img src="images/estudio4.png" alt="estudio4" class="img-fluid">
+        <div class="col-lg-5 col-md-10 col-sm-10 col-10 mx-auto m-3">
+          <img src="images/estudio2.png" alt="estudio2" class="img-fluid shadow p-3 mb-5 bg-white rounded">
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 col-md-8 mx-auto m-3">
-          <img src="images/estudio5.png" alt="estudio5" class="img-fluid">
+        <div class="col-lg-5 col-md-10 col-sm-10 col-10 mx-auto m-3">
+          <img src="images/estudio3.png" alt="estudio3" class="img-fluid shadow p-3 mb-5 bg-white rounded">
+        </div>
+        <div class="col-lg-5 col-md-10 col-sm-10 col-10 mx-auto m-3">
+          <img src="images/estudio4.png" alt="estudio4" class="img-fluid shadow p-3 mb-5 bg-white rounded">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-10 col-sm-10 col-10 mx-auto m-3">
+          <img src="images/estudio5.png" alt="estudio5" class="img-fluid shadow p-3 mb-5 bg-white rounded">
         </div>
       </div>
 
@@ -285,8 +337,9 @@
       <div class="container-fluid">
         <div class="row justify-content-center align-items-center h-100 pt-5">
           <div class="position-absolute col-lg-12">
-            <h1 class="jumbotron w-50 justify-content-center mx-auto bg-dark text-white display-4 text-center p-4">
-              Hobbies</h1>
+            <h1
+              class="col-xl-6 col-lg-8 col-md-6 jumbotron justify-content-center mx-auto bg-dark text-white display-4 text-center p-4">
+              HOBBIES</h1>
           </div>
           <img src="images/hobbie-rkmd3.jpg" alt="" class="img-fluid w-100 vh-100">
         </div>
@@ -295,7 +348,7 @@
       <div class="container-fluid">
         <div class="row mx-auto">
 
-          <div class="card col-lg-3 p-0 m-5 mx-auto">
+          <div class="card col-lg-3 col-md-10 col-sm-10 col-10 p-0 m-5 mx-auto">
             <img src="images/hobbie-rkmd2.jpg" alt="" class="card-img-top">
             <div class="card-body">
               <div class="card-title">
@@ -307,7 +360,7 @@
                 assumenda laudantium. Obcaecati.</p>
             </div>
           </div>
-          <div class="card col-lg-4 p-0 m-5 mx-auto">
+          <div class="card col-lg-4 col-md-10 col-sm-10 col-10 p-0 m-5 mx-auto">
             <img src="images/hobbie-srv.jpg" alt="" class="card-img-top">
             <div class="card-body">
               <div class="card-title">
@@ -319,7 +372,7 @@
                 assumenda laudantium. Obcaecati.</p>
             </div>
           </div>
-          <div class="card col-lg-4 p-0 m-5 mx-auto">
+          <div class="card col-lg-4 col-md-10 col-sm-10 col-10 p-0 m-5 mx-auto">
             <img src="images/hobbie-bb.jpg" alt="" class="card-img-top">
             <div class="card-body">
               <div class="card-title">
@@ -344,35 +397,42 @@
 
     <section class="bg-dark page-footer font-small teal pt-4">
       <div class="container-fluid text-center text-md-left mb-5">
-        <div class="row">
-          <div class="col-md-6 mt-md-0 md-3">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-10 mt-md-0 md-3">
             <h3 class="text-uppercase font-weight-bold text-white">Toyama Rodrigo</h3>
             <p class="text-white">
               <a href="index.html">Home</a> ·
               <a href="#AboutMe">About Me</a> ·
               <a href="#WhereDoILive">Where Do I Live</a> ·
               <a href="#FavoritePet">Favorite Pet</a> ·
-              <a href="#Hobbies">Hobbies</a> ·
-              <a href="#ContacMe">Contact me</a>
+              <a href="#Hobbies">Hobbies</a>
             </p>
 
             <!-- FIXME: tamaño iconos redes -->
 
-            <div class="d-flex justify-content-between mt-5 mx-3 w-75">
-              <a href="https://www.facebook.com/rodrigo.toyama" target="_blank"><img src="images/logo-facebook.svg"
-                  class="img-fluid" alt=""></a>
-              <a href="https://www.twitter.com/rtbangu" target="_blank"><img src="images/logo-twitter.svg"
-                  class="img-fluid" alt=""></a>
-              <a href="https://www.instagram.com/rt.codes" target="_blank"><img src="images/logo-instagram.svg"
-                  class="img-fluid" alt=""></a>
-              <a href="https://www.github.com/toyamarodrigo" target="_blank"><img src="images/logo-github.svg"
-                  class="img-fluid" alt=""></a>
+            <div class="row justify-content-between mt-5 mx-3">
+              <div class="col-sm-3 col-2">
+                <a href="https://www.facebook.com/rodrigo.toyama" target="_blank"><img src="images/logo-facebook.svg"
+                    class="img-fluid" width="52" alt=""></a>
+              </div>
+              <div class="col-sm-3 col-2">
+                <a href="https://www.twitter.com/rtbangu" target="_blank"><img src="images/logo-twitter.svg"
+                    class="img-fluid" width="52" alt=""></a>
+              </div>
+              <div class="col-sm-3 col-2">
+                <a href="https://www.instagram.com/rt.codes" target="_blank"><img src="images/logo-instagram.svg"
+                    class="img-fluid" width="52" alt=""></a>
+              </div>
+              <div class="col-sm-3 col-2">
+                <a href="https://www.github.com/toyamarodrigo" target="_blank"><img src="images/logo-github.svg"
+                    class="img-fluid" width="52" alt=""></a>
+              </div>
             </div>
           </div>
 
           <hr class="clearfix w-100 d-md-none pb-3">
 
-          <div class="col-md-6 mb-md-0 mb-3">
+          <div class="col-md-6 col-sm-10 col-10 mb-md-0 mb-3">
             <h3 class="text-uppercase font-weight-bold text-white">Contact me</h3>
             <form action="" class="text-white">
               <label for="">Name</label>
