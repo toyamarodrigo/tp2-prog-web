@@ -10,26 +10,45 @@
     TODO: 
     [x] arreglar/agregar todas las imagenes de las secciones que antes eran parallax.
     [x] arreglar el tamaño de las imagenes de las redes sociales
-    [] cortar las imagenes de las secciones 2 3 4
-    [] agregar agrandar imagenes al hacerles click
-    [] arreglar imagen de estudio EDUIT
-    [] agregar favicon
-    [] reducir tamaño a las imagenes
+    [x] cortar las imagenes de las secciones 2 3 4
+    [x] agregar agrandar imagenes al hacerles click
+    [x] arreglar imagen de estudio EDUIT
+    [x] agregar favicon
+    [x] reducir tamaño a las imagenes
     [] https://validator.w3.org 
     */
   </style>
 
   <meta charset="UTF-8">
-  <title>Web Personal</title>
+  <title>TP2 - Programacion Web I</title>
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body>
-  <div class="deco-line"></div>
 
-  <!----- Navivation ----->
+  <!----- Navivation Bar ----->
   <nav class="my-navbar navbar navbar-expand-md navbar-dark fixed-top bg-dark py-2">
     <div class="container-fluid">
       <a href="index.html" class="navbar-brand">
@@ -70,27 +89,30 @@
   </nav>
 
   <!----- Header ----->
-  <!-- FIXME: img parallax -->
   <header>
     <div class="col-12">
       <div class="row justify-content-center align-items-center">
         <div class="position-absolute col-xl-12 col-lg-12">
           <h1
-            class="col-xl-6 col-lg-7 col-md-9 col-sm-12 col-10 jumbotron justify-content-center mx-auto bg-dark text-white display-4 text-center p-4">
+            class="col-xl-6 col-lg-7 col-md-9 col-sm-12 col-10 jumbotron justify-content-center mx-auto bg-dark text-white display-4 text-center p-4 font-weight-normal">
             RODRIGO TOYAMA.</h1>
-            <hr class="w-25 pb-1">
-            <h5 class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-10 justify-content-center mx-auto bg-secondary text-white text-center p-1">Bootstrap Front-end Developer</h5>
+          <hr class="w-25 pb-1">
+          <h5
+            class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-10 justify-content-center mx-auto bg-secondary text-white text-center p-1 font-weight-light">
+            Bootstrap Front-end Developer</h5>
         </div>
-        <img src="images/barrio7-unsam.jpg" alt="" class="img-fluid w-100 vh-100">
+        <img src="images/barrio7-unsam.jpg" alt="" class="img-fluid w-100">
       </div>
     </div>
   </header>
 
 
   <!----- Main ----->
-  <main id="AboutMe">
+    <main id="AboutMe">
 
+    <!----- Who am I - Section ----->
     <section class="container-fluid padding">
+
       <div class="row text-center padding">
         <div class="col-xl-6 col-lg-6 col-md-5 col-sm-5 col-7 mx-auto p-0 pt-5">
           <img src="images/avatar.svg" class="col-lg-6 pb-4 w-75" alt="img-avatar">
@@ -105,6 +127,7 @@
           </div>
         </div>
       </div>
+
       <div class="container-fluid padding">
         <div class="row text-center padding">
           <div class="card col-10 col-sm-5 col-md-4 col-lg-4 col-xl-3 mx-auto mb-5 bg-dark text-white p-4">
@@ -131,9 +154,9 @@
 
     </section>
 
-
-    <!-- FIXME: img parallax -->
+    <!----- Where do I live - Section ----->
     <section id="WhereDoILive">
+
       <div class="col-12">
         <div class="row justify-content-center align-items-center">
           <div class="position-absolute col-xl-12 col-lg-12">
@@ -141,7 +164,7 @@
               class="col-xl-6 col-lg-8 col-md-8 col-sm-10 col-12 jumbotron justify-content-center mx-auto bg-dark text-white display-4 text-center p-4">
               WHERE DO I LIVE?</h1>
           </div>
-          <img src="images/barrio3-sanmartin.jpg" alt="" class="img-fluid w-100 vh-100">
+          <img src="images/barrio3-sanmartin2.jpg" alt="" class="img-fluid w-100">
         </div>
       </div>
 
@@ -192,10 +215,8 @@
         </div>
     </section>
 
-
+    <!----- Favorite Pet - Section ----->
     <section id="FavoritePet">
-
-      <!-- FIXME: img parallax -->
 
       <div class="container-fluid">
         <div class="row justify-content-center align-items-center">
@@ -204,12 +225,11 @@
               class="col-xl-6 col-lg-8 col-md-9 col-sm-11 jumbotron justify-content-center mx-auto bg-dark text-white display-4 text-center p-4">
               MY FAVOURITE PET</h1>
           </div>
-          <img src="images/animal1-grande.jpg" alt="" class="img-fluid w-100 vh-100">
+          <img src="images/animal1-grande2.jpg" alt="" class="img-fluid w-100">
         </div>
       </div>
 
       <div class="container-fluid">
-
         <div class="row mt-5 mb-3">
           <div class="col-lg-10 col-md-8 col-sm-11 text-center mx-auto m-3">
             <h1 class="">Why labradors are the best dogs in the World?</h1>
@@ -220,34 +240,44 @@
         </div>
         <div class="row mx-auto mb-5">
           <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
-            <img src="images/animal1-chico.jpg" alt="" class="img-fluid">
+            <a href="images/animal1-grande.jpg">
+              <img src="images/animal1-chico.jpg" alt="foto perro1" class="card-img">
+            </a>
           </div>
           <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
-            <img src="images/animal4-chico.jpg" alt="" class="img-fluid">
+            <a href="images/animal4-grande.jpg">
+              <img src="images/animal4-chico.jpg" alt="" class="img-fluid">
+            </a>
           </div>
           <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
-            <img src="images/animal2-chico.jpg" alt="" class="img-fluid">
+            <a href="images/animal2-grande.jpg">
+              <img src="images/animal2-chico.jpg" alt="" class="img-fluid">
+            </a>
           </div>
         </div>
         <div class="row mx-auto mb-5 pb-5">
           <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
-            <img src="images/animal3-chico.jpg" alt="" class="img-fluid">
+            <a href="images/animal3-grande.jpg">
+              <img src="images/animal3-chico.jpg" alt="" class="img-fluid">
+            </a>
           </div>
           <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
-            <img src="images/animal5-chico.jpg" alt="" class="img-fluid">
+            <a href="images/animal5-grande.jpg">
+              <img src="images/animal5-chico.jpg" alt="" class="img-fluid">
+            </a>
           </div>
           <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
-            <img src="images/animal6-chico.jpg" alt="" class="img-fluid">
+            <a href="images/animal6-grande.jpg">
+              <img src="images/animal6-chico.jpg" alt="" class="img-fluid">
+            </a>
           </div>
         </div>
       </div>
 
     </section>
 
-
+    <!----- Studies - Section ----->
     <section id="Studies">
-
-      <!-- FIXME: img parallax -->
 
       <div class="container-fluid">
         <div class="row justify-content-center align-items-center">
@@ -256,7 +286,7 @@
               class="col-xl-6 col-lg-8 col-md-6 col-sm-6 col-7 jumbotron justify-content-center mx-auto bg-dark text-white display-4 text-center p-4">
               STUDIES</h1>
           </div>
-          <img src="images/barrio5-unsam.jpg" alt="" class="img-fluid w-100 vh-100">
+          <img src="images/barrio5-unsam2.jpg" alt="" class="img-fluid w-100">
         </div>
       </div>
 
@@ -299,10 +329,8 @@
 
     </section>
 
-
+    <!----- Hobbies - Section ----->
     <section id="Hobbies">
-
-      <!-- FIXME: img parallax -->
 
       <div class="container-fluid">
         <div class="row justify-content-center align-items-center h-100 pt-5">
@@ -311,7 +339,7 @@
               class="col-xl-6 col-lg-8 col-md-6 jumbotron justify-content-center mx-auto bg-dark text-white display-4 text-center p-4">
               HOBBIES</h1>
           </div>
-          <img src="images/hobbie-rkmd3.jpg" alt="" class="img-fluid w-100 vh-100">
+          <img src="images/hobbie-rkmd32.jpg" alt="" class="img-fluid w-100">
         </div>
       </div>
 
@@ -364,7 +392,6 @@
   <!----- Footer ----->
   <footer id="ContactMe">
 
-
     <section class="bg-dark page-footer font-small teal pt-4">
       <div class="container-fluid text-center text-md-left mb-5">
         <div class="row justify-content-center">
@@ -383,19 +410,19 @@
             <div class="row justify-content-between mt-5 mx-3">
               <div class="col-sm-3 col-2">
                 <a href="https://www.facebook.com/rodrigo.toyama" target="_blank"><img src="images/logo-facebook.svg"
-                    class="img-fluid" width="52" alt=""></a>
+                    class="img-fluid" width="52" alt="facebook logo"></a>
               </div>
               <div class="col-sm-3 col-2">
                 <a href="https://www.twitter.com/rtbangu" target="_blank"><img src="images/logo-twitter.svg"
-                    class="img-fluid" width="52" alt=""></a>
+                    class="img-fluid" width="52" alt="twitter logo"></a>
               </div>
               <div class="col-sm-3 col-2">
                 <a href="https://www.instagram.com/rt.codes" target="_blank"><img src="images/logo-instagram.svg"
-                    class="img-fluid" width="52" alt=""></a>
+                    class="img-fluid" width="52" alt="instagram logo"></a>
               </div>
               <div class="col-sm-3 col-2">
                 <a href="https://www.github.com/toyamarodrigo" target="_blank"><img src="images/logo-github.svg"
-                    class="img-fluid" width="52" alt=""></a>
+                    class="img-fluid" width="52" alt="github logo"></a>
               </div>
             </div>
           </div>
@@ -422,8 +449,6 @@
     </section>
 
   </footer>
-
-
 
   <!----- Scripts ----->
   <script src="js/jquery-3.3.1.slim.min.js"></script>
