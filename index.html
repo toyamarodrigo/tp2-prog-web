@@ -1,469 +1,460 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
-<!----- Head ----->
+<!-- Head -->
 
 <head>
 
-  <meta charset="UTF-8">
-  <title>TP2 - Programacion Web I</title>
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <title>TP2 - Programacion Web I</title>
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-  <link rel="manifest" href="/icons/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbarResponsive">
 
-  <!----- Navivation Bar ----->
-  <nav class="my-navbar navbar navbar-expand-md navbar-dark fixed-top bg-dark py-2">
-    <div class="container-fluid">
-      <a href="index.html" class="navbar-brand">
-        <img src="images/logo.png" alt="Logo RT" class="img-fluid rounded-circle w-25">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#AboutMe" class="nav-link">About me</a>
-          </li>
-          <li class="nav-item">
-            <a href="#WhereDoILive" class="nav-link">Where Do I Live</a>
-          </li>
-          <li class="nav-item">
-            <a href="#FavoritePet" class="nav-link">Favorite pet</a>
-          </li>
-          <li class="nav-item">
-            <a href="#Studies" class="nav-link">Studies</a>
-          </li>
-          <li class="nav-item">
-            <a href="#Hobbies" class="nav-link">Hobbies</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav">
-          <li class="nav-item ml-auto">
-            <a href="#ContactMe" class="nav-link btn btn-info badge-pill text-white my-button px-3"
-              role="button">Contact me</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!----- Header ----->
-  <header>
-    <div class="col-12">
-      <div class="row justify-content-center align-items-center">
-        <div class="position-absolute col-xl-12 col-lg-12 col-12">
-          <h1
-            class="col-xl-6 col-lg-7 col-md-9 col-sm-12 col-11 jumbotron justify-content-center mx-auto bg-dark text-white display-4 text-center p-4 font-weight-normal">
-            RODRIGO TOYAMA.</h1>
-          <hr class="w-25 pb-1">
-          <h5
-            class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-10 justify-content-center mx-auto bg-secondary text-white text-center p-1 font-weight-light">
-            Bootstrap Front-end Developer</h5>
-        </div>
-        <img src="images/barrio7-unsam.jpg" alt="" class="img-fluid w-100 vh-100">
-      </div>
-    </div>
-  </header>
-
-
-  <!----- Main ----->
-  <main id="AboutMe">
-
-    <!----- Who am I - Section ----->
-    <section class="container-fluid padding">
-
-      <div class="row text-center padding">
-        <div class="col-xl-6 col-lg-6 col-md-5 col-sm-5 col-7 mx-auto p-0 pt-5">
-          <img src="images/avatar.svg" class="col-lg-6 pb-4 w-75" alt="img-avatar">
-          <h1>Who am I?</h1>
-        </div>
-        <div class="row text-center mx-auto">
-          <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-10 mx-auto">
-            <p class="lead pb-4">Rodrigo Toyama, 25 years old, Computer Programming and System Analyst Student with
-              experience in Front and
-              Back-End development and solving business problems.
-              This is my Bootstrap 4 website. Bootstrap is a free and open-source front-end
-              library
-              with
-              HTML and CSS based designs.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid padding">
-        <div class="row text-center padding">
-          <div class="card col-10 col-sm-5 col-md-4 col-lg-4 col-xl-3 mx-auto mb-5 bg-dark text-white p-4">
-            <h3 class="my-auto">Skills</h3>
-            <hr>
-            <p class="lead">HTML5</p>
-            <p class="lead">CSS3</p>
-            <p class="lead">Javascript</p>
-            <p class="lead">Bootstrap</p>
-            <p class="lead">Java</p>
-            <p class="lead">Hibernate</p>
-            <p class="lead">Spring 5</p>
-          </div>
-          <div class="card col-10 col-sm-5 col-md-4 col-lg-4 col-xl-3 mx-auto mb-5 bg-dark text-white p-4">
-            <h3>Others</h3>
-            <hr>
-            <p class="lead">MySQL</p>
-            <p class="lead">Office</p>
-            <p class="lead">Git</p>
-            <p class="lead">NodeJS</p>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <!----- Where do I live - Section ----->
-    <section id="WhereDoILive">
-
-      <div class="col-12">
-        <div class="row justify-content-center align-items-center">
-          <div class="position-absolute col-xl-12 col-lg-12 col-11">
-            <h1
-              class="col-xl-6 col-lg-8 col-md-8 col-sm-10 col-12 jumbotron justify-content-center mx-auto bg-dark text-white text-center display-4 p-4">
-              WHERE DO I LIVE?</h1>
-          </div>
-          <img src="images/barrio3-sanmartin.jpg" alt="" class="img-fluid w-100">
-        </div>
-      </div>
-
-      <div class="container-fluid">
-        <div class="card col-xl-8 col-lg-10 col-md-11 col-sm-11 col-12 mx-auto p-0 m-5">
-          <div class="row mx-auto">
-            <div class="col-lg-7 p-0">
-              <img src="images/barrio3-sanmartin.jpg" alt="barrio" class="img-fluid ">
-            </div>
-            <div class="col-lg-5 p-0 pl-3 pr-3">
-              <h2 class="card-title text-center pt-3">Villa Ballester</h2>
-              <hr>
-              <p class="card-text lead">City located in the northern Greater Buenos Aires urban area and it is part of
-                the General San Martín
-                Partido in Buenos Aires Province, Argentina. It is served by the Línea Mitre commuter railway with its
-                station also named Villa Ballester. Founded on 26 October 1889.</p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row">
-
-          <div class="card col-lg-3 col-md-10 col-sm-10 col-10 p-0 m-2 mb-5 mx-auto">
-            <img src="images/barrio1-bk.jpg" alt="" class="card-img-top">
-            <div class="card-body">
-              <p class="card-text lead">Burger King in the center of the town, it opened a few months ago. it's very
-                populated at all hours of
-                the day.</p>
-            </div>
-          </div>
-          <div class="card col-lg-3 col-md-10 col-sm-10 col-10 p-0 m-2 mb-5 mx-auto">
-            <img src="images/barrio4-sanmartin.jpg" alt="" class="card-img-top">
-            <div class="card-body">
-              <p class="card-text lead">Peatonal - San Martin, Place with great movement of people at weekends. You can
-                buy from cloths to
-                electronics all around. Not recommended to walk around at night at this places.</p>
-            </div>
-          </div>
-          <div class="card col-lg-3 col-md-10 col-sm-10 col-10 p-0 m-2 mb-5 mx-auto">
-            <img src="images/barrio6-unsam.jpg" alt="" class="card-img-top">
-            <div class="card-body">
-              <p class="card-text lead">Universidad de San Martin - Beautiful place with a lot of green, many buildings
-                where you can study in
-                peace. Weekends is close.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!----- Favorite Pet - Section ----->
-    <section id="FavoritePet">
-
-      <div class="container-fluid">
-        <div class="row justify-content-center align-items-center">
-          <div class="position-absolute col-lg-12 col-11">
-            <h1
-              class="col-xl-6 col-lg-8 col-md-9 col-sm-12 jumbotron justify-content-center mx-auto bg-dark text-white text-center display-4 p-1">
-              FAVORITE PET</h1>
-          </div>
-          <img src="images/animal1-grande.jpg" alt="" class="img-fluid w-100">
-        </div>
-      </div>
-
-      <div class="container-fluid">
-        <div class="row mt-5 mb-3">
-          <div class="col-lg-10 col-md-8 col-sm-11 text-center mx-auto m-3">
-            <h1 class="">Why labradors are the best dogs in the World?</h1>
-            <p class="lead mt-4">Everybody loves Labrador retrievers. In fact, Labradors are the most popular dog breed
-              in America. You’re
-              pretty likely to see at least a couple of these energetic, eager-to-please dogs when you spend time
-              outside
-              at the park or in your neighborhood. Labs make great family dogs. They can learn to play gently with small
-              kids. And they also make excellent hunting companions. Plus, Labrador retrievers are always ready for
-              adventure, whether that’s a hike in the mountains or a trip to the beach. And they’ll even curl up on the
-              couch with you.</p>
-          </div>
-        </div>
-        <div class="row mx-auto mb-5">
-          <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
-            <a href="images/animal1-grande.jpg">
-              <img src="images/animal1-chico.jpg" alt="foto perro1" class="card-img">
+    <!-- Navivation Bar -->
+    <nav class="my-navbar navbar navbar-expand-md navbar-dark fixed-top bg-dark py-2">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="images/logo.png" alt="Logo RT" class="img-fluid rounded-circle col-4 col-sm-4 col-md-6 col-lg-4 col-xl-4">
             </a>
-          </div>
-          <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
-            <a href="images/animal4-grande.jpg">
-              <img src="images/animal4-chico.jpg" alt="" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
-            <a href="images/animal2-grande.jpg">
-              <img src="images/animal2-chico.jpg" alt="" class="img-fluid">
-            </a>
-          </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#RodrigoToyama" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#AboutMe" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#WhereDoILive" class="nav-link">City</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#FavoritePet" class="nav-link">Pet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Studies" class="nav-link">Studies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Hobbies" class="nav-link">Hobbies</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item ml-auto">
+                        <a href="#ContactMe" class="nav-link btn btn-info badge-pill text-white my-button px-3" role="button">Contact me</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="row mx-auto mb-5 pb-5">
-          <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
-            <a href="images/animal3-grande.jpg">
-              <img src="images/animal3-chico.jpg" alt="" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
-            <a href="images/animal5-grande.jpg">
-              <img src="images/animal5-chico.jpg" alt="" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
-            <a href="images/animal6-grande.jpg">
-              <img src="images/animal6-chico.jpg" alt="" class="img-fluid">
-            </a>
-          </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="RodrigoToyama">
+        <div class="col-12">
+            <div class="row justify-content-center align-items-center">
+                <div class="position-absolute col-xl-12 col-lg-12 col-12">
+                    <h1 class="col-xl-6 col-lg-7 col-md-9 col-sm-12 col-11 jumbotron justify-content-center mx-auto bg-dark text-white display-4 text-center p-4 font-weight-normal">
+                        RODRIGO TOYAMA.</h1>
+                    <hr class="w-25 pb-1">
+                    <h5 class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-10 justify-content-center mx-auto bg-secondary text-white text-center p-1 font-weight-light">
+                        Bootstrap Front-end Developer</h5>
+                </div>
+                <img src="images/barrio7-unsam.jpg" alt="" class="img-fluid w-100 vh-100">
+            </div>
         </div>
-      </div>
+    </header>
 
-    </section>
 
-    <!----- Studies - Section ----->
-    <section id="Studies">
+    <!-- Main -->
+    <main id="AboutMe">
 
-      <div class="container-fluid">
-        <div class="row justify-content-center align-items-center">
-          <div class="position-absolute col-lg-12">
-            <h1
-              class="col-xl-6 col-lg-8 col-md-6 col-sm-6 col-10 jumbotron justify-content-center mx-auto bg-dark text-white text-center display-4 p-4">
-              STUDIES</h1>
-          </div>
-          <img src="images/barrio5-unsam.jpg" alt="" class="img-fluid w-100">
-        </div>
-      </div>
+        <!-- Who am I - Section -->
+        <section class="container-fluid padding">
 
-      <div class="container mt-5 shadow-lg p-3 mb-5 bg-white rounded">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="images/estudio1.png" alt="First slide">
+            <div class="row text-center padding">
+                <div class="col-xl-6 col-lg-6 col-md-5 col-sm-5 col-7 mx-auto p-0 pt-5">
+                    <img src="images/avatar.svg" class="col-lg-6 pb-4 w-75" alt="img-avatar">
+                    <h2>Who am I?</h2>
+                </div>
+                <div class="row text-center mx-auto">
+                    <div class="col-xl-9 col-lg-9 col-md-10 col-sm-10 col-10 mx-auto">
+                        <p class="lead pb-4">Rodrigo Toyama, 25 years old, Computer Programming and System Analyst Student with
+                            experience in Front and
+                            Back-End development and solving business problems.
+                            This is my Bootstrap 4 website. Bootstrap is a free and open-source front-end
+                            library
+                            with
+                            HTML and CSS based designs.</p>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="images/estudio2.png" alt="Second slide">
+
+            <div class="container-fluid pt-4">
+                <div class="row text-center">
+                    <div class="card col-10 col-sm-5 col-md-4 col-lg-4 col-xl-3 mx-auto mb-5 bg-dark text-white p-4">
+                        <h3 class="my-auto">Skills</h3>
+                        <hr>
+                        <p class="lead">HTML5</p>
+                        <p class="lead">CSS3</p>
+                        <p class="lead">Javascript</p>
+                        <p class="lead">Bootstrap</p>
+                        <p class="lead">Java</p>
+                        <p class="lead">Hibernate</p>
+                        <p class="lead">Spring 5</p>
+                    </div>
+                    <div class="card col-10 col-sm-5 col-md-4 col-lg-4 col-xl-3 mx-auto mb-5 bg-dark text-white p-4">
+                        <h3>Others</h3>
+                        <hr>
+                        <p class="lead">MySQL</p>
+                        <p class="lead">Office</p>
+                        <p class="lead">Git</p>
+                        <p class="lead">NodeJS</p>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="images/estudio3.png" alt="Third slide">
+
+        </section>
+
+        <!-- Where do I live - Section -->
+        <section id="WhereDoILive">
+
+            <div class="col-12">
+                <div class="row justify-content-center align-items-center">
+                    <div class="position-absolute col-xl-12 col-lg-12 col-11">
+                        <h2 class="col-xl-6 col-lg-8 col-md-8 col-sm-10 col-12 jumbotron justify-content-center mx-auto bg-dark text-white text-center display-4 p-4">
+                            WHERE DO I LIVE?</h2>
+                    </div>
+                    <img src="images/barrio3-sanmartin.jpg" alt="" class="img-fluid w-100">
+                </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="images/estudio4.png" alt="Fourth slide">
+
+            <div class="container-fluid">
+                <div class="card col-xl-8 col-lg-10 col-md-11 col-sm-11 col-12 mx-auto p-0 m-5">
+                    <div class="row mx-auto">
+                        <div class="col-lg-7 p-0">
+                            <img src="images/barrio3-sanmartin.jpg" alt="barrio" class="img-fluid ">
+                        </div>
+                        <div class="col-lg-5 p-0 pl-3 pr-3">
+                            <h2 class="card-title text-center pt-3">Villa Ballester</h2>
+                            <hr>
+                            <p class="card-text lead">City located in the northern Greater Buenos Aires urban area and it is part of
+                                the General San Martín
+                                Partido in Buenos Aires Province, Argentina. It is served by the Línea Mitre commuter railway with its
+                                station also named Villa Ballester. Founded on 26 October 1889.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="card col-lg-3 col-md-10 col-sm-10 col-10 p-0 m-2 mb-5 mx-auto">
+                        <img src="images/barrio1-bk.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text lead">Burger King in the center of the town, it opened a few months ago. it's very
+                                populated at all hours of
+                                the day.</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-10 col-sm-10 col-10 p-0 m-2 mb-5 mx-auto">
+                        <img src="images/barrio4-sanmartin.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text lead">Peatonal - San Martin, Place with great movement of people at weekends. You can
+                                buy from cloths to
+                                electronics all around. Not recommended to walk around at night at this places.</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-10 col-sm-10 col-10 p-0 m-2 mb-5 mx-auto">
+                        <img src="images/barrio6-unsam.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <p class="card-text lead">Universidad de San Martin - Beautiful place with a lot of green, many buildings
+                                where you can study in
+                                peace. Weekends is close.</p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="images/estudio5.png" alt="Fifth slide">
+        </section>
+
+        <!-- Favorite Pet - Section -->
+        <section id="FavoritePet">
+
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center">
+                    <div class="position-absolute col-lg-12 col-11">
+                        <h2 class="col-xl-6 col-lg-8 col-md-9 col-sm-12 jumbotron justify-content-center mx-auto bg-dark text-white text-center display-4 p-1">
+                            FAVORITE PET</h2>
+                    </div>
+                    <img src="images/animal1-grande.jpg" alt="" class="img-fluid w-100">
+                </div>
             </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
 
-    </section>
-
-    <!----- Hobbies - Section ----->
-    <section id="Hobbies">
-
-      <div class="container-fluid">
-        <div class="row justify-content-center align-items-center h-100 pt-5">
-          <div class="position-absolute col-lg-12">
-            <h1
-              class="col-xl-6 col-lg-8 col-md-6 jumbotron justify-content-center mx-auto bg-dark text-white text-center display-4 p-4">
-              HOBBIES</h1>
-          </div>
-          <img src="images/hobbie-rkmd3.jpg" alt="" class="img-fluid w-100">
-        </div>
-      </div>
-
-      <div class="container-fluid">
-        <div class="row mx-auto">
-
-          <div class="card col-lg-3 col-md-10 col-sm-10 col-10 p-0 m-5 mx-auto">
-            <img src="images/hobbie-rkmd2.jpg" alt="" class="card-img-top">
-            <div class="card-body">
-              <div class="card-title">
-                <h4>Ryukyukoku Matsuridaiko</h4>
-              </div>
-              <hr>
-              <p class="card-text">Created in 1982.</p>
-              <p class="card-text">
-                Eisa Group, born in Okinawa / Japan. It has branches all over the world (Argentina, Brasil,
-                Peru,
-                Bolivia, Mexico, Los Angeles, Republica Checa, Japan and mother branch Okinawa).
-              </p>
+            <div class="container-fluid">
+                <div class="row mt-5 mb-3">
+                    <div class="col-lg-10 col-md-8 col-sm-11 text-center mx-auto m-3">
+                        <h2 class="">Why labradors are the best dogs in the World?</h2>
+                        <p class="lead mt-4">Everybody loves Labrador retrievers. In fact, Labradors are the most popular dog breed
+                            in America. You’re
+                            pretty likely to see at least a couple of these energetic, eager-to-please dogs when you spend time
+                            outside
+                            at the park or in your neighborhood. Labs make great family dogs. They can learn to play gently with small
+                            kids. And they also make excellent hunting companions. Plus, Labrador retrievers are always ready for
+                            adventure, whether that’s a hike in the mountains or a trip to the beach. And they’ll even curl up on the
+                            couch with you.</p>
+                    </div>
+                </div>
+                <div class="row mx-auto mb-5">
+                    <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
+                        <a href="images/animal1-grande.jpg">
+                            <img src="images/animal1-chico.jpg" alt="foto perro1" class="card-img">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
+                        <a href="images/animal4-grande.jpg">
+                            <img src="images/animal4-chico.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
+                        <a href="images/animal2-grande.jpg">
+                            <img src="images/animal2-chico.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="row mx-auto mb-5 pb-5">
+                    <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
+                        <a href="images/animal3-grande.jpg">
+                            <img src="images/animal3-chico.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
+                        <a href="images/animal5-grande.jpg">
+                            <img src="images/animal5-chico.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-10 p-0 m-3 mx-auto">
+                        <a href="images/animal6-grande.jpg">
+                            <img src="images/animal6-chico.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="card col-lg-4 col-md-10 col-sm-10 col-10 p-0 m-5 mx-auto">
-            <img src="images/hobbie-srv.jpg" alt="" class="card-img-top">
-            <div class="card-body">
-              <div class="card-title">
-                <h4>Stevie Ray Vaughan</h4>
-              </div>
-              <hr>
-              <p class="card-text">October 3, 1954 – August 27, 1990</p>
-              <p class="card-text">
-                Stevie Ray Vaughan (SRV) was an American musician, singer, songwriter, and record producer, and
-                one of the most influential
-                guitarists in the revival of blues in the 1980s. He is commonly referred to as one of the
-                greatest
-                guitar players of all time.
-              </p>
+
+        </section>
+
+        <!-- Studies - Section -->
+        <section id="Studies">
+
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center">
+                    <div class="position-absolute col-lg-12">
+                        <h2 class="col-xl-6 col-lg-8 col-md-6 col-sm-6 col-10 jumbotron justify-content-center mx-auto bg-dark text-white text-center display-4 p-4">
+                            STUDIES</h2>
+                    </div>
+                    <img src="images/barrio5-unsam.jpg" alt="" class="img-fluid w-100">
+                </div>
             </div>
-          </div>
-          <div class="card col-lg-4 col-md-10 col-sm-10 col-10 p-0 m-5 mx-auto">
-            <img src="images/hobbie-bb.jpg" alt="" class="card-img-top">
-            <div class="card-body">
-              <div class="card-title">
-                <h4>Breaking Bad</h4>
-              </div>
-              <hr>
-              <p class="card-text">January 20, 2008 - September 29, 2013</p>
-              <p class="card-text">
-                  Breaking Bad is an American neo-Western crime drama television series created and produced by
-                  Vince Gilligan.
-                  Breaking Bad is widely regarded as one of the greatest television series of all time.
-                  By the time the series finale aired, it was among the most-watched cable shows on American
-                  television.
-              </p>
+
+            <div class="container mt-5 shadow-lg p-3 mb-5 bg-white rounded">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/estudio1.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/estudio2.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/estudio3.png" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/estudio4.png" alt="Fourth slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images/estudio5.png" alt="Fifth slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
-          </div>
 
-        </div>
-      </div>
-    </section>
+        </section>
 
-  </main>
+        <!-- Hobbies - Section -->
+        <section id="Hobbies">
 
-
-  <!----- Footer ----->
-  <footer id="ContactMe">
-
-    <section class="bg-dark page-footer font-small teal pt-4">
-      <div class="container-fluid text-center text-md-left mb-5">
-        <div class="row justify-content-center">
-          <div class="col-md-6 col-10 mt-md-0 md-3">
-            <h3 class="text-uppercase font-weight-bold text-white">Toyama Rodrigo</h3>
-            <p class="text-white">
-              <a href="index.html">Home</a> ·
-              <a href="#AboutMe">About Me</a> ·
-              <a href="#WhereDoILive">Where Do I Live</a> ·
-              <a href="#FavoritePet">Favorite Pet</a> ·
-              <a href="#Hobbies">Hobbies</a>
-            </p>
-
-            <!-- FIXME: tamaño iconos redes -->
-
-            <div class="row justify-content-between mt-5 mx-3">
-              <div class="col-sm-3 col-3">
-                <a href="https://www.facebook.com/rodrigo.toyama" target="_blank"><img src="images/logo-facebook.svg"
-                    class="img-fluid" width="52" alt="facebook logo"></a>
-              </div>
-              <div class="col-sm-3 col-3">
-                <a href="https://www.twitter.com/rtbangu" target="_blank"><img src="images/logo-twitter.svg"
-                    class="img-fluid" width="52" alt="twitter logo"></a>
-              </div>
-              <div class="col-sm-3 col-3">
-                <a href="https://www.instagram.com/rt.codes" target="_blank"><img src="images/logo-instagram.svg"
-                    class="img-fluid" width="52" alt="instagram logo"></a>
-              </div>
-              <div class="col-sm-3 col-3">
-                <a href="https://www.github.com/toyamarodrigo" target="_blank"><img src="images/logo-github.svg"
-                    class="img-fluid" width="52" alt="github logo"></a>
-              </div>
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center h-100 pt-5">
+                    <div class="position-absolute col-lg-12">
+                        <h2 class="col-xl-6 col-lg-8 col-md-6 jumbotron justify-content-center mx-auto bg-dark text-white text-center display-4 p-4">
+                            HOBBIES</h2>
+                    </div>
+                    <img src="images/hobbie-rkmd3.jpg" alt="" class="img-fluid w-100">
+                </div>
             </div>
-          </div>
 
-          <hr class="clearfix w-100 d-md-none pb-3">
+            <div class="container-fluid">
+                <div class="row mx-auto">
 
-          <div class="col-md-6 col-sm-10 col-10 mb-md-0 mb-3">
-            <h3 class="text-uppercase font-weight-bold text-white">Contact me</h3>
-            <form action="#" class="text-white">
-              <label for="inputName">Name</label>
-              <input type="text" class="form-control mb-3" placeholder="Name" id="inputName">
-              <label for="inputEmail">Email address</label>
-              <input type="email" class="form-control mb-3" placeholder="email@email.com" id="inputEmail">
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-          </div>
-        </div>
-      </div>
+                    <div class="card col-lg-3 col-md-10 col-sm-10 col-10 p-0 m-5 mx-auto">
+                        <img src="images/hobbie-rkmd2.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Ryukyukoku Matsuridaiko</h4>
+                            </div>
+                            <hr>
+                            <p class="card-text">Created in 1982.</p>
+                            <p class="card-text">
+                                Eisa Group, born in Okinawa / Japan. It has branches all over the world (Argentina, Brasil,
+                                Peru,
+                                Bolivia, Mexico, Los Angeles, Republica Checa, Japan and mother branch Okinawa).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-10 col-sm-10 col-10 p-0 m-5 mx-auto">
+                        <img src="images/hobbie-srv.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Stevie Ray Vaughan</h4>
+                            </div>
+                            <hr>
+                            <p class="card-text">October 3, 1954 – August 27, 1990</p>
+                            <p class="card-text">
+                                Stevie Ray Vaughan (SRV) was an American musician, singer, songwriter, and record producer, and
+                                one of the most influential
+                                guitarists in the revival of blues in the 1980s. He is commonly referred to as one of the
+                                greatest
+                                guitar players of all time.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-4 col-md-10 col-sm-10 col-10 p-0 m-5 mx-auto">
+                        <img src="images/hobbie-bb.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Breaking Bad</h4>
+                            </div>
+                            <hr>
+                            <p class="card-text">January 20, 2008 - September 29, 2013</p>
+                            <p class="card-text">
+                                Breaking Bad is an American neo-Western crime drama television series created and produced by
+                                Vince Gilligan.
+                                Breaking Bad is widely regarded as one of the greatest television series of all time.
+                                By the time the series finale aired, it was among the most-watched cable shows on American
+                                television.
+                            </p>
+                        </div>
+                    </div>
 
-      <div class="footer-copyright text-center py-3 bg-info">
-        2019 Copyright: <a href="" class="text-white">Bootstrap 4</a>
-      </div>
+                </div>
+            </div>
+        </section>
 
-    </section>
+    </main>
 
-  </footer>
 
-  <!----- Scripts ----->
-  <script src="js/jquery-3.3.1.slim.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+    <!-- Footer -->
+    <footer id="ContactMe">
+
+        <section class="bg-dark page-footer font-small teal pt-4">
+            <div class="container-fluid text-center text-md-left mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-10 mt-md-0 md-3">
+                        <h3 class="text-uppercase font-weight-bold text-white">Toyama Rodrigo</h3>
+                        <p class="text-white">
+                            <a href="index.html">Home</a> ·
+                            <a href="#AboutMe">About Me</a> ·
+                            <a href="#WhereDoILive">Where Do I Live</a> ·
+                            <a href="#FavoritePet">Favorite Pet</a> ·
+                            <a href="#Hobbies">Hobbies</a>
+                        </p>
+
+                        <!-- FIXME: tamaño iconos redes -->
+
+                        <div class="row justify-content-between mt-5 mx-3">
+                            <div class="col-sm-3 col-3">
+                                <a href="https://www.facebook.com/rodrigo.toyama" target="_blank"><img src="images/logo-facebook.svg" class="img-fluid" width="52" alt="facebook logo"></a>
+                            </div>
+                            <div class="col-sm-3 col-3">
+                                <a href="https://www.twitter.com/rtbangu" target="_blank"><img src="images/logo-twitter.svg" class="img-fluid" width="52" alt="twitter logo"></a>
+                            </div>
+                            <div class="col-sm-3 col-3">
+                                <a href="https://www.instagram.com/rt.codes" target="_blank"><img src="images/logo-instagram.svg" class="img-fluid" width="52" alt="instagram logo"></a>
+                            </div>
+                            <div class="col-sm-3 col-3">
+                                <a href="https://www.github.com/toyamarodrigo" target="_blank"><img src="images/logo-github.svg" class="img-fluid" width="52" alt="github logo"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="clearfix w-100 d-md-none pb-3">
+
+                    <div class="col-md-6 col-sm-10 col-10 mb-md-0 mb-3">
+                        <h3 class="text-uppercase font-weight-bold text-white">Contact me</h3>
+                        <form action="#" class="text-white">
+                            <label for="inputName">Name</label>
+                            <input type="text" class="form-control mb-3" placeholder="Name" id="inputName">
+                            <label for="inputEmail">Email address</label>
+                            <input type="email" class="form-control mb-3" placeholder="email@email.com" id="inputEmail">
+                            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright text-center py-3 bg-info">
+                2019 Copyright: <a href="" class="text-white">Bootstrap 4</a>
+            </div>
+
+        </section>
+
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
